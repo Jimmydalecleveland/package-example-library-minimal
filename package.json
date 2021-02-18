@@ -1,7 +1,7 @@
 {
   "name": "@jimmydc/package-example-library-minimal",
   "version": "0.0.0",
-  "decription": "This is an example package using a minimal setup to achieve ESM which is tree-shakeable by Webpack or other bundlers",
+  "decription": "This is an example project using a minimal setup to achieve a ESM tree-shakeable package by Webpack or other bundlers",
   "main": "index.js",
   "type": "module",
   "sideEffects": false,

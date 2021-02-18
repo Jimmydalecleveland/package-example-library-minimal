@@ -4,6 +4,7 @@ This is an example project using a minimal setup to achieve a ESM tree-shakeable
 
 - The first publish will need public access enabled for scoped packages (e.g. `npm publish --access public`).
 - Using the `npm version` command will increase the version and make a tagged commit automatically (e.g. `npm version patch`).
+- After installing the package, if the version is below `1.0.0`, reinstalling the package will not automatically update the version like the normal `npm install` behavior. For example, if the package was installed as `0.1.0` (due to it being in a state where every new version could be a breaking change), and a new version `0.2.0` is released, that version will not be installed when running `npm update` or `npm i @jimmydc/package-example-library-minimal`. Whoever is installing the package will need to append `@latest` to the package name. (e.g. `npm i @jimmydc/package-example-library-minimal@latest).
 - `"sideEffects": false` field is required for module level tree-shaking by bundlers like Webpack. It is stating that this library has no side effects, but an array of files with side effects can be used if those exist in your library.
 - `"type": "module"` field is only required for running locally. Project importing this library don't seem to care if it's there or not.
 - The exported modules can be imported using commonjs or ESM imports.

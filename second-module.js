@@ -4,7 +4,7 @@ function secondModule() {
 }
 
 function helper() {
-  return "example helper being used by secondModule default export";
+  return "example helper function being used by secondModule default export";
 }
 
 export default secondModule;

@@ -1,0 +1,22 @@
+{
+  "name": "@jimmydc/package-example-library-minimal",
+  "version": "0.0.0",
+  "decription": "This is an example package using a minimal setup to achieve ESM which is tree-shakeable by Webpack or other bundlers",
+  "main": "index.js",
+  "type": "module",
+  "sideEffects": false,
+  "keywords": [
+    "library",
+    "example"
+  ],
+  "author": "Jimmy Cleveland <jimmydalecleveland@gmail.com> (blog.jimmydc.com)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jimmydalecleveland/package-example-minimal"
+  },
+  "bugs": {
+    "url": "https://github.com/Jimmydalecleveland/package-example-minimal/issues"
+  },
+  "homepage": "https://github.com/Jimmydalecleveland/package-example-minimal#readme"
+}
